@@ -11,6 +11,8 @@ Does a MySQL dump, gzips the dump, and uploads it to Amazon S3.
  -u, --user        MySQL user to use for mysqldump
  -p, --pass        MySQL password to use for mysqldump
  -t, --age         Maximum number of days to keep backups for (15)
+
+Requires tinys3 (install with "pip install tinys3")
 """
 
 import datetime, getopt, subprocess, sys, time, tinys3
